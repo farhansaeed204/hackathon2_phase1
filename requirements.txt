@@ -1,0 +1,5 @@
+# Todo In-Memory Python Console App
+# Dependencies will be added as the project develops through the spec-driven process
+
+# Placeholder for future dependencies
+# - Will be populated during the implementation phase based on spec requirements

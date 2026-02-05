@@ -1,3 +1,69 @@
+---
+id: 1
+title: Create Hackathon Constitution
+stage: constitution
+date: 2026-02-05
+surface: agent
+model: claude-sonnet-4-5-20250929
+feature: todo-app
+branch: master
+user: Farhan_Saeed
+command: /sp.constitution
+labels: [constitution, hackathon, todo-app, ai-development]
+links:
+  spec: null
+  ticket: null
+  adr: null
+  pr: null
+files:
+ - .specify/memory/constitution.md
+tests:
+ - none
+---
+
+## Prompt
+
+Create a "Constitution" file for a hackathon project: Phase I of a Todo In-Memory Python Console App. This constitution serves as the foundational guiding document for the project, similar to a project charter or AI agent guidelines. It must define the core principles, rules for development, AI usage, and ethical considerations. The output should be a well-structured Markdown file (constitution.md) that can be directly placed in a GitHub repository.
+
+Key Project Context:
+
+- Objective: Build a CLI todo app with in-memory storage using spec-driven, AI-only coding (no manual code).
+
+- Features: Add, Delete, Update, View tasks, Mark as complete.
+
+- Approach: Agentic Dev Stack (Spec → Plan → Tasks → Claude Code implementation).
+
+- Tools: UV, Python 3.13+, Claude Code, Spec-Kit Plus.
+
+- Constraints: No manual coding; track all specs and prompts.
+
+- Deliverables: Include this constitution in the repo, along with specs history, src, README, CLAUDE.md.
+
+Structure the Constitution as follows:
+
+1. **Preamble**: A short introduction stating the project's purpose and commitment to agentic development.
+
+2. **Core Principles**:
+   - Spec-Driven Development: All features start with specs using Spec-Kit Plus.
+   - AI-Only Implementation: Use Claude Code (or alternatives like Qwen) for code generation; no human-written code.
+   - Clean Code and Structure: Adhere to PEP 8, modularity, and proper Python project layout.
+   - Transparency: Document all prompts, iterations, and decisions in specs history and CLAUDE.md.
+   - Innovation Focus: Prioritize hackathon judging on process (prompts/iterations) over perfection.
+
+3. **Development Rules**:
+   - Workflow: Always follow Write Spec → Generate Plan → Break into Tasks → Implement via AI.
+   - Tool Usage: UV for dependencies; Python 3.13+; no external storage or internet in the app.
+   - Iteration Handling: Review AI-generated code; if issues, refine prompts and iterate without manual fixes.
+   - Ethical Guidelines: Ensure code is secure, non-malicious; respect open-source best practices.
+
+4. **Amendment Process**: How to update the constitution if needed (e.g., via new specs and AI review).
+
+5. **Signatures**: End with a placeholder for "Adopted by [Your Name]" and date.
+
+Make the language formal, concise, and inspirational for a hackathon project. Output only the Markdown content of constitution.md, nothing else.
+
+## Response snapshot
+
 <!-- SYNC IMPACT REPORT
 Version change: N/A (initial creation) → 1.0.0
 Modified principles: None (new document)
@@ -69,3 +135,18 @@ All code generations must be validated against constitutional principles; implem
 Regular constitutional compliance reviews must occur at specification completion, implementation plan approval, and task completion stages; any deviations must be documented and corrected through constitutional amendment procedures.
 
 **Version**: 1.0.0 | **Ratified**: 2026-02-05 | **Last Amended**: 2026-02-05
+
+## Outcome
+
+- ✅ Impact: Created foundational constitution document for hackathon project that establishes core principles for AI-driven development
+- 🧪 Tests: none
+- 📁 Files: Updated .specify/memory/constitution.md with complete constitution
+- 🔁 Next prompts: Continue with spec creation for the todo app
+- 🧠 Reflection: Constitution successfully captures all required elements including spec-driven approach, AI-only implementation, and hackathon-specific focus
+
+## Evaluation notes (flywheel)
+
+- Failure modes observed: None
+- Graders run and results (PASS/FAIL): Not applicable
+- Prompt variant (if applicable): Not applicable
+- Next experiment (smallest change to try): Begin specification creation for the todo app features
